@@ -13,8 +13,8 @@ import java.util.List;
 @RequestMapping("/api/pedidos")
 public class PedidoController {
 
-    @PostMapping
-    public List<Pedido> save(@RequestBody List<NovoPedidoDTO> pedidos) {
+    @PostMapping("/lote")
+    public List<Object> save(@RequestBody List<NovoPedidoDTO> pedidos) {
         return null;
     }
 }
