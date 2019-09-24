@@ -1,6 +1,7 @@
 package br.com.bluesoft.desafio.api;
 
 import br.com.bluesoft.desafio.dto.NovoPedidoDTO;
+import br.com.bluesoft.desafio.model.Pedido;
 import br.com.bluesoft.desafio.service.PedidoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -22,7 +23,7 @@ public class PedidoController {
     }
 
     @PostMapping("/lote")
-    public List<Object> save(@RequestBody List<NovoPedidoDTO> pedidos) {
+    public List<Pedido> save(@RequestBody List<NovoPedidoDTO> pedidos) {
         return this.pedidoService.save(pedidos);
     }
 }
