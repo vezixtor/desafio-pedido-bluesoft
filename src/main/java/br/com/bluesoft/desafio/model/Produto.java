@@ -11,6 +11,9 @@ public class Produto {
 
     private String nome;
 
+    public Produto() {
+    }
+
     public Produto(String gtin, String nome) {
         this.gtin = gtin;
         this.nome = nome;
